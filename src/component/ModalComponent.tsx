@@ -22,9 +22,8 @@ export const ModalComponent = ({addProduct,editProduct}:IModalProps) => {
             addProduct(values.name)
             break;
           case ModalType.EDIT:
-           
-          
-    
+            if (item)
+          editProduct(values.name,item)
         }
     
       }
